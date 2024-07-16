@@ -131,12 +131,11 @@ header {
     justify-content: center;
     align-items: center;
     
-    &>.hero-blur {
+    &>.hero {
         position: absolute;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        filter: blur(1px);
         top: 0;
         left: 0;
         right: 0;

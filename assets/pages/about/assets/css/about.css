@@ -166,7 +166,7 @@ main {
         background-color: var(--clr-primary);
 
         & > div  {
-            margin: 80px 140px 40px 140px;
+            margin: 120px 140px 40px 140px;
 
             & > h1 {
                 font-size: 3rem;
@@ -209,7 +209,7 @@ main {
         background-color: var(--clr-primary);
 
         & > div  {
-            margin: 80px 140px 40px 140px;
+            margin: 40px 140px 40px 140px;
 
             & > h1 {
                 font-size: 3rem;
@@ -338,7 +338,7 @@ main {
         background-color: var(--clr-primary);
 
         & > div  {
-            margin: 40px 140px 40px 140px;
+            margin: 40px 140px 120px 140px;
 
             & > h1 {
                 font-size: 3rem;

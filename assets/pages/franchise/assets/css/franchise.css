@@ -123,48 +123,131 @@ header {
     }
 }
 
-.hero-container {
-    position: relative;
-    overflow: hidden;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &>.hero-blur {
-        position: absolute;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        filter: blur(1px);
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-
-        &>img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
+main {
+    &>.hero-container {
+        position: relative;
+        overflow: hidden;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        &>.hero {
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+    
+            &>img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    
+        &>.hero-text {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            animation: 4s anim-lineUp ease-out;
+            
+            &>h1 {
+                color: var(--clr-primary);
+                font-size: 5rem;
+                font-weight: 700;
+                letter-spacing: 3px;
+                margin-bottom: 0.2em;
+                text-align: center;
+                filter: none;
+            }
         }
     }
-
-    &>.hero-text {
-        position: relative;
-        z-index: 1;
+    
+    &>.content-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-        color: var(--clr-primary);
-        animation: 4s anim-lineUp ease-out;
+        min-height: 80vh;
+        background-color: var(--clr-primary);
+        &>.franchise-container {
+            width: 100%;
+            &>.franchise-text {
+                &>h2 {
+                font-size: 3rem;
+                font-weight: 700;
+                letter-spacing: 3px;
+                margin-bottom: 0.2em;
+                text-align: center;
+                padding-bottom: 10px;
+                position: relative;
 
-        &>h1 {
-            font-size: 5rem;
-            font-weight: 700;
-            letter-spacing: 3px;
-            margin-bottom: 0.2em;
-            text-align: center;
-            filter: none;
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 6em;
+                        height: 3px;
+                        background: var(--clr-tertiary); 
+                        margin: 0 auto;
+                        margin-top: 10px; 
+                    }
+                }
+    
+                &>p {
+                font-size: 1.3rem;
+                font-weight: 300;
+                text-align: center;
+                padding-bottom: 13px;
+                margin-left: 5em;
+                margin-right: 5em;
+                }
+
+                & > ul, & > ol {
+                    list-style-position: inside;
+                    font-size: 1.3rem;
+                    font-weight: 300;
+                    text-align: left;
+                    margin: 0 auto;
+                    padding-bottom: 13px;
+                    max-width: 800px;
+                }
+            
+                & > ul > li, & > ol > li {
+                    margin-bottom: 10px;
+                }
+            }
         }
+        .cta-container {
+            background-color: var(--clr-secondary);
+            padding: 2em;
+            margin-top: 2em;
+            width: 100%;
+            text-align: center;
+            &>.cta-content {
+                max-width: 800px;
+                margin: 0 auto;
+                
+                &>.cta-btn {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    color: var(--clr-primary);
+                    background-color: var(--clr-tertiary);
+                    text-decoration: none;
+                    border-radius: 5px;
+                    margin-top: 1em;
+                }
+            }
+        }
+        
+        
     }
 }
 
