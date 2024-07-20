@@ -108,7 +108,7 @@ main {
   & > .hero-container {
     position: relative;
     overflow: hidden;
-    min-height: 40vh;
+    min-height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,7 +126,7 @@ main {
         font-weight: 700;
         letter-spacing: 3px;
         margin-bottom: 0.2em;
-        margin-top: 10vh;
+        margin-top: 6vh;
         text-align: center;
       }
     }
@@ -422,8 +422,71 @@ footer {
         }
       }
     }
-  }
 
+    & > .coffee-container {
+      & > h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-align: center;
+        padding-top: 1em;
+        position: relative;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 4em;
+          height: 3px;
+          background: var(--clr-tertiary);
+          margin: 0 auto;
+          margin-top: 10px;
+        }
+      }
+
+      & > .product-content {
+        & > .product-card {
+          width: 170px;
+          background-color: var(--clr-secondary);
+          border-radius: 50px;
+          overflow: hidden;
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+          margin: 10px;
+        }
+      }
+    }
+
+    & > .pastry-container {
+      & > h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-align: center;
+        padding-top: 1em;
+        position: relative;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 4em;
+          height: 3px;
+          background: var(--clr-tertiary);
+          margin: 0 auto;
+          margin-top: 10px;
+        }
+      }
+
+      & > .product-content {
+        & > .product-card {
+          width: 170px;
+          background-color: var(--clr-secondary);
+          border-radius: 50px;
+          overflow: hidden;
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+          margin: 10px;
+        }
+      }
+    }
+  }
   footer {
     & > .footer-container {
       & > .container-content {
